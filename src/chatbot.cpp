@@ -42,7 +42,6 @@ ChatBot::~ChatBot()
         _image = NULL;
     }
 
-    //_chatLogic->SetChatbotHandle(this);
 }
 
 //// STUDENT CODE
