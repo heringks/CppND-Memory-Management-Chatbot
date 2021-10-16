@@ -11,7 +11,8 @@ GraphNode::~GraphNode()
     //// STUDENT CODE
     ////
 
-//    delete _chatBot; 
+    // Warm-up Task: the deletion of chatbot caused a segmentation fault when the chatbot GUI was closed.
+    // Therefore, it was removed from here.
 
     ////
     //// EOF STUDENT CODE

@@ -17,11 +17,8 @@ ChatLogic::ChatLogic()
     //// STUDENT CODE
     ////
 
-    // create instance of chatbot
-    // _chatBot = new ChatBot("../images/chatbot.png");
-
-    // add pointer to chatlogic so that chatbot answers can be passed on to the GUI
-    // _chatBot->SetChatLogicHandle(this);
+    // Task 5: Deleted the creation of the instance of chatbot and moved the line of code that called
+    // SetChatLogicHangle to near the end of LoadAnswerGraphFromFile
 
     ////
     //// EOF STUDENT CODE
@@ -32,20 +29,11 @@ ChatLogic::~ChatLogic()
     //// STUDENT CODE
     ////
 
-    // delete chatbot instance
-    // delete _chatBot;
-
-    // delete all nodes
-//    for (auto it = std::begin(_nodes); it != std::end(_nodes); ++it)
-//    {
-//        delete *it;
-//    }
-
-    // delete all edges
-//    for (auto it = std::begin(_edges); it != std::end(_edges); ++it)
-//    {
-//        delete *it;
-//    }
+    // Tasks 3 - 5: Since _nodes and _edges were converted into vectors of unique pointers, 
+    // the deallocation of the memory on the heap that they mangaged gets done automatically
+    // once the ChatLogic objects go out of scope. Therefore, the deletion of all nodes and 
+    // all edges was removed from here. The deletion of the chatbot object caused a segmentation error,
+    // so it was also removed.
 
     ////
     //// EOF STUDENT CODE
